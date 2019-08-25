@@ -1,4 +1,4 @@
-# react-ol-typescript-playground
+# react-mobx-ol-typescript-playground
 
 ## How to dev
 
@@ -6,8 +6,8 @@
 
 ```bash
 # ... Setup node and yarn
-$ git clone git@github.com:kobakazu0429/react-ol-typescript-playground.git
-$ cd react-ol-typescript-playground
+$ git clone git@github.com:kobakazu0429/react-mobx-ol-typescript-playground.git
+$ cd react-mobx-ol-typescript-playground
 $ yarn install
 ```
 
