@@ -16,6 +16,8 @@
     ]
   },
   "dependencies": {
+    "mobx": "^5.13.0",
+    "mobx-react-lite": "^1.4.1",
     "normalize.css": "^8.0.1",
     "ol": "^5.3.3",
     "react": "^16.9.0",
