@@ -1,4 +1,10 @@
-import React, { useContext, useCallback, useState, ChangeEvent } from "react";
+import React, {
+  useContext,
+  useCallback,
+  useState,
+  ChangeEvent,
+  useEffect
+} from "react";
 
 import RootContext from "@/utils/contexts/RootContext";
 
@@ -12,12 +18,21 @@ export const MapController = () => {
       const newValue = Number(e.target.value);
       setValue(newValue);
       if (!mapStore.map) return;
-      mapStore.map.getView().setZoom((newValue / 100) * 17.5);
+      mapStore.map.getView().setZoom((newValue / 100) * 28);
     },
     [value]
   );
 
-  return (
+  useEffect(() => {
+    if (!mapStore.map) return;
+    mapStore.map.on("moveend", e => {
+      console.log(e.map.getView().getZoom());
+      if (!e.map.getView().getZoom()) return;
+      setValue(((e.map.getView().getZoom() as number) / 28) * 100);
+    });
+  }, []);
+
+  return mapStore.map ? (
     <div>
       <span>set zoom</span>
       <input
@@ -27,6 +42,10 @@ export const MapController = () => {
         value={value}
         onChange={handleChange}
       />
+    </div>
+  ) : (
+    <div>
+      <span>unset map now...</span>
     </div>
   );
 };
