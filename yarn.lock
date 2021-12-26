@@ -179,7 +179,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
   integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
 
-"@types/ol@^5.3.5":
+"@types/ol@5.3.5":
   version "5.3.5"
   resolved "https://registry.yarnpkg.com/@types/ol/-/ol-5.3.5.tgz#0410a74a039ffe3c8ca28e25b6655cb9d5fbe92d"
   integrity sha512-zX9Epdg4YJvi8diEFgn9sgfpHjij7TEz5lswqe2cvNb3GM9qJRjHU9kKUQDZcJH2aKwKqRQgvyn1IWsJk/MiJA==
@@ -233,7 +233,7 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/styled-components@^4.1.18":
+"@types/styled-components@4.1.18":
   version "4.1.18"
   resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.18.tgz#348804fe5a399ae0a46550afaf030085815ad931"
   integrity sha512-VrHkgvjbxQXOw0xWSUckusUUZ4y/jqN1u7kF29ngh0oE6uOrlZHleTgqeUqylQqHQIeQ8MxFb50BRHy8ju5DHg==
